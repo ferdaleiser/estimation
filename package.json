@@ -10,7 +10,9 @@
     "start": "node app.js",
     "test": "NODE_ENV=test mocha",
     "test-ci": "NODE_ENV=test-travis mocha --reporter spec",
-    "test-debug": "NODE_ENV=test node_modules/.bin/mocha --debug --debug-brk"
+    "test-debug": "NODE_ENV=test node_modules/.bin/mocha --debug --debug-brk",
+    "db:migrate": "./node_modules/.bin/sequelize db:migrate",
+    "db:seed:all": "./node_modules/.bin/sequelize db:seed:all"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",

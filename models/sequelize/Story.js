@@ -12,6 +12,9 @@ module.exports = function(db, DataTypes) {
         name: {
             type: DataTypes.STRING,
         },
+        description: Sequelize.STRING,
+        jiraID: Sequelize.STRING,
+        points: Sequelize.STRING,
     }, {
         tableName: 'stories',
         timestamps: true
